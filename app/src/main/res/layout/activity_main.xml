@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trafficMonitorActivity" >
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >t
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_trafficmonitor"
+            android:button="@null"
+            android:drawableTop="@drawable/list_selected"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click1"
+            android:text="流量监听" />
+
+        <RadioButton
+            android:id="@+id/rb_trafficsearch"
+            android:button="@null"
+            android:drawableTop="@drawable/traffic_selected"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click2"
+            android:text="流量查询" />
+        <RadioButton
+            android:id="@+id/rb_trafficsearch"
+            android:button="@null"
+            android:drawableTop="@drawable/traffic_selected"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="click3"
+            android:text="报表统计" />
+    </RadioGroup>
+
+</LinearLayout>
